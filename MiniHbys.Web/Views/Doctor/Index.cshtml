@@ -1,0 +1,42 @@
+@model IEnumerable<MiniHbys.Entity.Doctor>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewBag.Title = "Doctor";
+    Layout = "_Layout";
+}
+
+<div style="float: right; padding: 20px;">
+    @Html.ActionLink("Create",actionName:"Create",controllerName:"Doctor",null,
+                    htmlAttributes: new { @class="btn btn-success" } )
+</div>
+<table class="table">
+    <tr>
+        <th>Doctor Name</th>
+        <th>Doctor Surname</th>
+        <th>Actions</th>
+    </tr>
+    
+    @foreach (var doctor in Model)
+    {
+        <tr>
+            <td>
+                @doctor.DoctorName
+            </td>
+            <td>
+                @doctor.DoctorSurname
+            </td>
+            <td>
+                @if (HttpContextAccessor.HttpContext.Session.GetInt32("DoctorWriteAccess") == 1 || HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                {
+                    @Html.ActionLink("Detail", actionName: "Detail", controllerName: "Doctor", new { id = doctor.DoctorID },
+                        htmlAttributes: new { @class = "btn btn-primary action-button" })
+                    @Html.ActionLink("Edit", actionName: "Edit", controllerName: "Doctor", new { id = doctor.DoctorID },
+                        htmlAttributes: new { @class = "btn btn-info action-button" })
+                    @Html.ActionLink("Delete", actionName: "Delete", controllerName: "Doctor", new { id = doctor.DoctorID },
+                        htmlAttributes: new { @class = "btn btn-danger action-button" })
+                }
+            </td>
+        </tr>
+    }
+</table>

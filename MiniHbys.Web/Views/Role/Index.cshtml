@@ -1,0 +1,43 @@
+@model List<MiniHbys.Entity.Role>
+
+@{
+    ViewBag.Title = "Role";
+    Layout = "_Layout";
+}
+
+
+<div style="float: right; padding: 20px;">
+    @Html.ActionLink("Create", actionName: "Create", controllerName: "Role", null,
+        htmlAttributes: new { @class = "btn btn-success" })
+</div>
+<table class="table">
+    <tr>
+        <th>Role Name</th>
+        <th>Role Description</th>
+        <th>Is Super Admin</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var role in Model)
+    {
+        <tr>
+            <td>
+                @role.RoleName
+            </td>
+            <td>
+                @role.RoleDescription
+            </td>
+            <td>
+                @role.IsSuperAdmin.ToString()
+            </td>
+            <td>
+                @Html.ActionLink("Detail", actionName: "Detail", controllerName: "Role", new { id = role.RoleID },
+                    htmlAttributes: new { @class = "btn btn-primary action-button" })
+                @Html.ActionLink("Edit", actionName: "Edit", controllerName: "Role", new { id = role.RoleID },
+                    htmlAttributes: new { @class = "btn btn-info action-button" })
+                @Html.ActionLink("Delete", actionName: "Delete", controllerName: "Role", new { id = role.RoleID },
+                    htmlAttributes: new { @class = "btn btn-danger action-button" })
+            </td>
+        </tr>
+    }
+</table>

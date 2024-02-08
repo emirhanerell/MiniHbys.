@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MiniHbys.Common\MiniHbys.Common.csproj" />
+      <ProjectReference Include="..\MiniHbys.DataAccess\MiniHbys.DataAccess.csproj" />
+      <ProjectReference Include="..\MiniHbys.Entity\MiniHbys.Entity.csproj" />
+    </ItemGroup>
+
+</Project>

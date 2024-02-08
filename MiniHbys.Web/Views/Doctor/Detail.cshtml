@@ -1,0 +1,32 @@
+@model MiniHbys.Entity.Doctor
+
+@{
+    ViewBag.Title = "Doctor";
+    Layout = "_Layout";
+}
+
+<div class="content" style="padding: 20px">
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Doctor Name</strong>
+        </label>
+    </div>
+    <label>@Model.DoctorName</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Doctor Surname</strong>
+        </label>
+    </div>
+    <label>@Model.DoctorSurname</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Department</strong>
+        </label>
+    </div>
+    <label>@Model.Department.DepartmentName</label>
+</div>
+
+<div style="padding-top: 5%">
+    @Html.ActionLink(linkText: "Back", actionName: "Index", controllerName: "Doctor", routeValues: null, htmlAttributes: new
+    { @class = "btn btn-secondary" })
+</div>

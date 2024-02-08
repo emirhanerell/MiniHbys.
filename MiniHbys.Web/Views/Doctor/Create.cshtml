@@ -1,0 +1,46 @@
+@using MiniHbys.Entity
+@model MiniHbys.Entity.Doctor
+
+@{
+    ViewBag.Title = "Create Doctor";
+    Layout = "_Layout";
+
+    var departments = (List<Department>)ViewBag.Departments;
+    var departmentSelectListItems = new List<SelectListItem>();
+    foreach (var department in departments)
+    {
+        departmentSelectListItems.Add(new SelectListItem()
+        {
+            Value = department.DepartmentID.ToString(), Text =
+                department.DepartmentName
+        });
+    }
+}
+
+@using (Html.BeginForm(actionName: "Create", controllerName: "Doctor", routeValues: null, method: FormMethod.Post))
+{
+    <div style="padding: 20px">
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.DoctorName, htmlAttributes: new { @class = "form-control", placeholder = "Doctor Name" })
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.DoctorSurname, htmlAttributes: new { @class = "form-control", placeholder = "Doctor Surname" })
+        </div>
+        <strong>Department</strong>
+        <div class="form-group">
+            @Html.DropDownListFor(x => x.DepartmentID, departmentSelectListItems, htmlAttributes: new { @class = "form-control",
+             placeholder = "Department" })
+        </div>
+        <div style="float: right">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger alert-dismissible" style="width: 50%">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                @ViewBag.Message
+            </div>
+        }
+    </div>
+}

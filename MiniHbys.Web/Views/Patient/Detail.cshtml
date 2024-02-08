@@ -1,0 +1,45 @@
+@model MiniHbys.Entity.Patient
+
+@{
+    ViewBag.Title = "Patient Detail";
+    Layout = "_Layout";
+}
+
+
+<div class="content" style="padding: 20px">
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Name</strong>
+        </label>
+    </div>
+    <label>@Model.PatientName</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Surname</strong>
+        </label>
+    </div>
+    <label>@Model.PatientSurname</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Gender</strong>
+        </label>
+    </div>
+    <label>@Model.PatientGender</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Blood Group</strong>
+        </label>
+    </div>
+    <label>@Model.BloodGroup</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Birth Date</strong>
+        </label>
+    </div>
+    <label>@Model.BirthDate?.ToShortDateString()</label>
+</div>
+
+<div style="padding-top: 5%">
+    @Html.ActionLink(linkText: "Back", actionName: "Index", controllerName: "Patient", routeValues: null, htmlAttributes: new
+    { @class = "btn btn-secondary" })
+</div>

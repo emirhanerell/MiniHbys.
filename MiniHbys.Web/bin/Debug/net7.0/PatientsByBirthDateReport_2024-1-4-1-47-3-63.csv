@@ -1,0 +1,4 @@
+PatientID; PatientName; PatientSurname; PatientGender; BloodGroup; BirthDate
+3; Damla; Işık; Kadin     ; B-Rh+; 4.05.2001 00:00:00
+4; Ceyda; Soylu; Kadin     ; A-Rh-; 1.06.2001 00:00:00
+5; Yağmur; Şimşek; Kadin     ; A-Rh+; 4.08.2001 00:00:00

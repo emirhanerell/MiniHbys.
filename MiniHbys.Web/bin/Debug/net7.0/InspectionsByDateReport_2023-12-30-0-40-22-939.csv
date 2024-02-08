@@ -1,0 +1,2 @@
+InspectionID; InspectionDate; DoctorID; PatientID; InspectionResult; Patient; Doctor
+3; 11.11.2019 00:00:00; 2; 4; asdaaaaaa; MiniHbys.Entity.Patient; MiniHbys.Entity.Doctor

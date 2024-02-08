@@ -1,0 +1,100 @@
+@model MiniHbys.Entity.Role
+
+@{
+    ViewBag.Title = "Role Detail";
+    Layout = "_Layout";
+}
+
+
+<div class="content" style="padding: 20px">
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Role Name</strong>
+        </label>
+    </div>
+    <label>@Model.RoleName</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Role Description</strong>
+        </label>
+    </div>
+    <label>@Model.RoleDescription</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Department Read Access</strong>
+        </label>
+    </div>
+    <label>@Model.DepartmentReadAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Department Write Access</strong>
+        </label>
+    </div>
+    <label>@Model.DepartmentWriteAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Doctor Read Access</strong>
+        </label>
+    </div>
+    <label>@Model.DoctorReadAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Doctor Write Access</strong>
+        </label>
+    </div>
+    <label>@Model.DoctorWriteAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Inspection Read Access</strong>
+        </label>
+    </div>
+    <label>@Model.InspectionReadAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Inspection Write Access</strong>
+        </label>
+    </div>
+    <label>@Model.InspectionWriteAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Read Access</strong>
+        </label>
+    </div>
+    <label>@Model.PatientReadAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Write Access</strong>
+        </label>
+    </div>
+    <label>@Model.PatientWriteAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Medical Operation Read Access</strong>
+        </label>
+    </div>
+    <label>@Model.MedicalOperationReadAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Medical Operation Write Access</strong>
+        </label>
+    </div>
+    <label>@Model.MedicalOperationWriteAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Medicine Item Read Access</strong>
+        </label>
+    </div>
+    <label>@Model.MedicineItemReadAccess</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Medicine Item Write Access</strong>
+        </label>
+    </div>
+    <label>@Model.MedicineItemWriteAccess</label>
+
+</div>
+
+<div style="padding-top: 5%">
+    @Html.ActionLink(linkText: "Back", actionName: "Index", controllerName: "Role", routeValues: null, htmlAttributes: new
+    { @class = "btn btn-secondary" })
+</div>

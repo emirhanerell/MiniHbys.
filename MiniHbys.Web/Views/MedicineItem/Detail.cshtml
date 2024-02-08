@@ -1,0 +1,35 @@
+@model MiniHbys.Entity.MedicineItem
+
+@{
+    ViewBag.Title = "Medicine Item Detail";
+    Layout = "_Layout";
+}
+
+<div class="content" style="padding: 20px">
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Medicine Item Name</strong>
+        </label>
+    </div>
+    <label>@Model.MedicineName</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient</strong>
+        </label>
+    </div>
+    <label>@string.Format("{0} {1}",Model.Patient?.PatientName,Model.Patient?.PatientSurname)</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Inspection Date</strong>
+        </label>
+    </div>
+    <label>@Model.Inspection?.InspectionDate?.ToShortDateString()</label>
+</div>
+
+<div style="padding-top: 5%">
+    @Html.ActionLink(linkText: "Back", actionName: "Index", controllerName: "MedicineItem", routeValues: null, htmlAttributes: new
+    { @class = "btn btn-secondary" })
+</div>
+
+
+

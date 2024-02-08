@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MiniHbys.Business\MiniHbys.Business.csproj" />
+      <ProjectReference Include="..\MiniHbys.Common\MiniHbys.Common.csproj" />
+      <ProjectReference Include="..\MiniHbys.DataAccess\MiniHbys.DataAccess.csproj" />
+      <ProjectReference Include="..\MiniHbys.Entity\MiniHbys.Entity.csproj" />
+      <ProjectReference Include="..\MiniHbys.Utilities\MiniHbys.Utilities.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Pages" />
+      <Folder Include="wwwroot\adminLteSrc" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
+    </ItemGroup>
+
+</Project>

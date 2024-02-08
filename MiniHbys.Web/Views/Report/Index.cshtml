@@ -1,0 +1,74 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "Report";
+    Layout = "_Layout";
+}
+
+<div class="row" style="padding: 10%">
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h6>Inspection By Date</h6>
+            </div>
+            <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+              @Html.ActionLink(linkText:"Go To Report",actionName:"GetInspectionsByDate",controllerName:"Report",routeValues:null,
+                        htmlAttributes: new { @class = "small-box-footer"})
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h6>Inspection By Doctor</h6>
+            </div>
+            <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+              @Html.ActionLink(linkText:"Go To Report",actionName:"GetInspectionsByDoctor",controllerName:"Report",routeValues:null,
+                        htmlAttributes: new { @class = "small-box-footer"})
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h6>Inspection By Patient</h6>
+            </div>
+            <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+            @Html.ActionLink(linkText:"Go To Report",actionName:"GetInspectionsByPatient",controllerName:"Report",routeValues:null,
+                htmlAttributes: new { @class = "small-box-footer"})
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h6>Medicine Item By Patient</h6>
+            </div>
+            <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+            @Html.ActionLink(linkText:"Go To Report",actionName:"GetMedicineItemsByPatient",controllerName:"Report",routeValues:null,
+                htmlAttributes: new { @class = "small-box-footer"})
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h6>Patients By Birth Date</h6>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+                @Html.ActionLink(linkText:"Go To Report",actionName:"GetPatientsByBirthDate",controllerName:"Report",routeValues:null,
+                htmlAttributes: new { @class = "small-box-footer"})
+            </div>
+        </div>
+</div>

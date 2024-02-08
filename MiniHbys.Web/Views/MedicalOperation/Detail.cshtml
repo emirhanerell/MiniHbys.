@@ -1,0 +1,39 @@
+@model MiniHbys.Entity.MedicalOperation
+
+@{
+    ViewBag.Title = "Medical Operation Detail";
+    Layout = "_Layout";
+}
+
+
+<div class="content" style="padding: 20px">
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Medical Operation Date</strong>
+        </label>
+    </div>
+    <label>@Model.MedicalOperationDate</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Medical Operatin Notes</strong>
+        </label>
+    </div>
+    <label>@Model.Notes</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Doctor Name</strong>
+        </label>
+    </div>
+    <label>@string.Format("{0} {1}", Model.Inspection?.Doctor?.DoctorName, Model.Inspection?.Doctor?.DoctorSurname) </label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>Patient Name</strong>
+        </label>
+    </div>
+    <label>@string.Format("{0} {1}", Model.Inspection?.Patient?.PatientName, Model.Inspection?.Patient?.PatientSurname) </label>
+</div>
+
+<div style="padding-top: 5%">
+    @Html.ActionLink(linkText: "Back", actionName: "Index", controllerName: "MedicalOperation", routeValues: null, htmlAttributes: new
+    { @class = "btn btn-secondary" })
+</div>

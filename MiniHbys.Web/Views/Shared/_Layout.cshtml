@@ -1,0 +1,230 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mini HBYS</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="~/adminLteSrc/plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/adminLteSrc/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/adminLteSrc/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+    @{
+        var userFullName = HttpContextAccessor.HttpContext.Session.GetString("UserFullname");
+    }
+    
+    <style>
+        .action-button{
+        margin-left: 1%;
+        }
+    </style>
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="index3.html" class="nav-link">@ViewBag.Title</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+            <span class="brand-text font-weight-light">Mini HBYS</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="info">
+                    <a href="#" class="d-block">@userFullName</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("PatientReadAccess") == 1 || 
+                    HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="/Patient/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Patient
+                                </p>
+                            </a>
+                        </li>
+                    }
+                    
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("DoctorReadAccess") == 1 || 
+                         HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="/Doctor/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Doctor
+                                </p>
+                            </a>
+                        </li>
+                    }
+                  
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("InspectionReadAccess") == 1 || 
+                         HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="/Inspection/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Inspection
+                                </p>
+                            </a>
+                        </li>
+                    }
+                    
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("MedicalOperationReadAccess") == 1 || 
+                         HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="/MedicalOperation/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Medical Operation
+                                </p>
+                            </a>
+                        </li>
+                    }
+                    
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("MedicineItemReadAccess") == 1 || 
+                         HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="/MedicineItem/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    MedicineItem
+                                </p>
+                            </a>
+                        </li>
+                    }
+                   
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("DepartmentReadAccess") == 1 || 
+                         HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="/Department/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Department
+                                </p>
+                            </a>
+                        </li>
+                    }
+                   
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1 )
+                    {
+                        <li class="nav-item">
+                            <a href="/User/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    User
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Role/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Role
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Report/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Reports
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/System/CreateBackup" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Create Backup
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/System/RestoreDatabase" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Restore Backup
+                                </p>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
+        </section>
+    </div>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="~/adminLteSrc/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/adminLteSrc/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="~/adminLteSrc/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="~/adminLteSrc/dist/js/adminlte.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="~/adminLteSrc/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="~/adminLteSrc/plugins/raphael/raphael.min.js"></script>
+<script src="~/adminLteSrc/plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="~/adminLteSrc/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="~/adminLteSrc/plugins/chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="~/adminLteSrc/dist/js/pages/dashboard2.js"></script>
+</body>
+</html>

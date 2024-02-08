@@ -1,0 +1,43 @@
+@model System.Collections.Generic.List<MiniHbys.Entity.User>
+
+@{
+    ViewBag.Title = "User";
+    Layout = "_Layout";
+}
+
+<div style="float: right; padding: 20px;">
+    @Html.ActionLink("Create", actionName: "Create", controllerName: "User", null,
+        htmlAttributes: new { @class = "btn btn-success" })
+</div>
+<table class="table">
+    <tr>
+        <th>User Name</th>
+        <th>User Surname</th>
+        <th>User Email</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>
+                @user.UserName
+            </td>
+            <td>
+                @user.UserSurname
+            </td>
+            <td>
+                @user.UserEmail
+            </td>
+            <td>
+                
+                @Html.ActionLink("Detail", actionName: "Detail", controllerName: "User", new { id = user.UserID },
+                    htmlAttributes: new { @class = "btn btn-primary action-button" })
+                @Html.ActionLink("Edit", actionName: "Edit", controllerName: "User", new { id = user.UserID },
+                    htmlAttributes: new { @class = "btn btn-info action-button" })
+                @Html.ActionLink("Delete", actionName: "Delete", controllerName: "User", new { id = user.UserID },
+                    htmlAttributes: new { @class = "btn btn-danger action-button" })
+            </td>
+        </tr>
+    }
+</table>

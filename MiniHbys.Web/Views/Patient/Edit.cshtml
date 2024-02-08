@@ -1,0 +1,45 @@
+@model MiniHbys.Entity.Patient
+
+@{
+    ViewBag.Title = "Edit Patient";
+    Layout = "_Layout";
+}
+
+
+
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Patient", routeValues: null, method: FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.PatientID)
+    <div class="content" style="padding: 20px">
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.PatientName, htmlAttributes: new
+            {
+                @class = "form-control", placeholder =
+                    "Patient Name"
+            })
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.PatientSurname, htmlAttributes: new { @class = "form-control", placeholder = "Patient Surname" })
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.PatientGender, htmlAttributes: new { @class = "form-control", placeholder = "Patient Gender" })
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.BloodGroup, htmlAttributes: new { @class = "form-control", placeholder = "Patient Blood Group" })
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.BirthDate, htmlAttributes: new { @class = "form-control", placeholder = "Patient BirthDate" })
+        </div>
+        <div style="float: right">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger alert-dismissible" style="width: 50%">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                @ViewBag.Message
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,42 @@
+@using MiniHbys.Entity
+@model GetInspectionByDoctorViewModel
+
+@{
+    ViewBag.Title = "Inspections By Doctor";
+    Layout = "_Layout";
+
+    var doctors = (List<Doctor>)ViewBag.Doctors;
+    var doctorSelectListItems = new List<SelectListItem>();
+
+    foreach (var doctor in doctors)
+    {
+        var doctorName = string.Format("{0} {1}", doctor.DoctorName, doctor.DoctorSurname);
+        doctorSelectListItems.Add(new SelectListItem(text:doctorName,value:doctor.DoctorID.ToString()));
+    }
+    
+}
+
+@using (Html.BeginForm(actionName: "GetInspectionsByDoctorReport", controllerName: "Report", routeValues: null, method: FormMethod.Post))
+{
+    <div style="padding: 20px">
+        <label>Doctor</label>
+        <div class="form-group">
+            @Html.DropDownListFor(x => x.DoctorID, doctorSelectListItems, htmlAttributes: new
+            {
+                @class = "form-control", placeholder =
+                    "Doctor"
+            })
+        </div>
+        <div style="float: right">
+            <button type="submit" class="btn btn-success">Get Report</button>
+        </div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger alert-dismissible" style="width: 50%">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                @ViewBag.Message
+            </div>
+        }
+    </div>
+}

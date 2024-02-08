@@ -1,0 +1,45 @@
+@model MiniHbys.Entity.User
+
+@{
+    ViewBag.Title = "User Detail";
+    Layout = "_Layout";
+}
+
+
+<div class="content" style="padding: 20px">
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>User Name</strong>
+        </label>
+    </div>
+    <label>@Model.UserName</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>User Surname</strong>
+        </label>
+    </div>
+    <label>@Model.UserSurname</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>User Email</strong>
+        </label>
+    </div>
+    <label>@Model.UserEmail</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>User Bitrh Date</strong>
+        </label>
+    </div>
+    <label>@Model.BirthDate</label>
+    <div class="form-group">
+        <label style="font-size: 22px">
+            <strong>User Role</strong>
+        </label>
+    </div>
+    <label>@Model.Role?.RoleName</label>
+</div>
+
+<div style="padding-top: 5%">
+    @Html.ActionLink(linkText: "Back", actionName: "Index", controllerName: "Role", routeValues: null, htmlAttributes: new
+    { @class = "btn btn-secondary" })
+</div>

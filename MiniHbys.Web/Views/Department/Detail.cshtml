@@ -1,0 +1,21 @@
+@model MiniHbys.Entity.Department
+
+@{
+    ViewBag.Title = "Department Detail";
+    Layout = "_Layout";
+}
+
+
+<div class="content" style="padding: 20px">
+    <div class="form-group" >
+        <label style="font-size: 22px">
+            <strong>Department Name</strong>
+        </label>
+    </div>
+    <label>@Model.DepartmentName</label>
+</div>
+
+<div style="padding-top: 5%">
+    @Html.ActionLink(linkText:"Back",actionName:"Index",controllerName:"Department",routeValues:null,htmlAttributes:new 
+    {@class="btn btn-secondary"})
+</div>

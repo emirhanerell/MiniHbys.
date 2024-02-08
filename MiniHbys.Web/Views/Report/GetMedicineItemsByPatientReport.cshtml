@@ -1,0 +1,33 @@
+@model System.Collections.Generic.List<MiniHbys.Entity.MedicineItem>
+
+@{
+    ViewBag.Title = "Medicine Items By Patient";
+    Layout = "_Layout";
+}
+
+<table class="table">
+    <tr>
+        <th>Medicine Name</th>
+        <th>Patient Name</th>
+        <th>Inspection Date</th>
+    </tr>
+
+    @foreach (var medicineItem in Model)
+    {
+        <tr>
+            <td>
+                @medicineItem.MedicineName
+            </td>
+            <td>
+                @string.Format("{0} {1}",medicineItem.Patient?.PatientName,medicineItem.Patient?.PatientSurname) 
+            </td>
+            <td>
+                @medicineItem.Inspection?.InspectionDate?.ToShortDateString()
+            </td>
+        </tr>
+    }
+</table>
+<div style="padding: 10%">
+    @Html.ActionLink(linkText:"Export",actionName:"ExportReport",controllerName:"Report",routeValues:new {reportName = "MedicineItemsByPatientReport"},
+    htmlAttributes:new { @class="btn btn-success"})
+</div>

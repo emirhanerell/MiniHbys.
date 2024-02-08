@@ -1,0 +1,50 @@
+@model System.Collections.Generic.List<MiniHbys.Entity.Inspection>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewBag.Title = "Inspection";
+    Layout = "_Layout";
+}
+
+
+<div style="float: right; padding: 20px;">
+    @Html.ActionLink("Create", actionName: "Create", controllerName: "Inspection", null,
+        htmlAttributes: new { @class = "btn btn-success" })
+</div>
+<table class="table">
+    <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Inspection Date</th>
+        <th>Inspection Result</th>
+    </tr>
+
+    @foreach (var inspection in Model)
+    {
+        <tr>
+            <td>
+                @string.Format("{0} {1}", inspection.Patient?.PatientName, inspection.Patient?.PatientSurname)
+            </td>
+            <td>
+                @string.Format("{0} {1}", inspection.Doctor?.DoctorName, inspection.Doctor?.DoctorSurname)
+            </td>
+            <td>
+                @inspection.InspectionDate
+            </td>
+            <td>
+                @inspection.InspectionResult
+            </td>
+            <td>
+                @if (HttpContextAccessor.HttpContext.Session.GetInt32("InspectionWriteAccess") == 1 || HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                {
+                    @Html.ActionLink("Detail", actionName: "Detail", controllerName: "Inspection", new { id = inspection.InspectionID },
+                        htmlAttributes: new { @class = "btn btn-primary action-button" })
+                    @Html.ActionLink("Edit", actionName: "Edit", controllerName: "Inspection", new { id = inspection.InspectionID },
+                        htmlAttributes: new { @class = "btn btn-info action-button" })
+                    @Html.ActionLink("Delete", actionName: "Delete", controllerName: "Inspection", new { id = inspection.InspectionID },
+                        htmlAttributes: new { @class = "btn btn-danger action-button" })
+                }
+            </td>
+        </tr>
+    }
+</table>

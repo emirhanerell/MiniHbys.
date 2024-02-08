@@ -1,0 +1,30 @@
+@model MiniHbys.Entity.Department
+
+@{
+    ViewBag.Title = "Create Department";
+    Layout = "_Layout";
+}
+
+@using (Html.BeginForm(actionName:"Create",controllerName:"Department",routeValues:null,method:FormMethod.Post))
+{
+
+    <div style="padding: 20px">
+        <strong>Doctor Name</strong>
+        <div class="form-group" style="padding-top: 2%; width: 40%">
+            @Html.TextBoxFor(x => x.DepartmentName, htmlAttributes: new { @class = "form-control" })
+        </div>
+        <div style="float: right">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger alert-dismissible" style="width: 50%">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                @ViewBag.Message
+            </div>
+        }
+       
+    </div>
+}
+

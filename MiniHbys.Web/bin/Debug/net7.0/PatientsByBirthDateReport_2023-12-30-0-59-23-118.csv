@@ -1,0 +1,3 @@
+PatientID; PatientName; PatientSurname; PatientGender; BloodGroup; BirthDate
+2; Hasan; Ok; Erkek     ; 0+; 26.12.2023 19:52:51
+4; patient deneme ad; patient deneme soyad; Erkek     ; B+; 23.11.2022 00:00:00

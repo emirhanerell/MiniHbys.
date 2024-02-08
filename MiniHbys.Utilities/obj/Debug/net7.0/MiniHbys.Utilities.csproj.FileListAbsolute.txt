@@ -1,0 +1,47 @@
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.deps.json
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.csproj.AssemblyReference.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.AssemblyInfoInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.AssemblyInfo.cs
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.csproj.CoreCompileInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/refint/MiniHbys.Utilities.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/ref/MiniHbys.Utilities.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.deps.json
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.pdb
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.csproj.AssemblyReference.cache
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.AssemblyInfoInputs.cache
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.AssemblyInfo.cs
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.csproj.CoreCompileInputs.cache
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/refint/MiniHbys.Utilities.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.pdb
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/Debug/net7.0/ref/MiniHbys.Utilities.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\bin\Debug\net7.0\MiniHbys.Utilities.deps.json
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\bin\Debug\net7.0\MiniHbys.Utilities.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\bin\Debug\net7.0\MiniHbys.Utilities.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.AssemblyInfoInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.AssemblyInfo.cs
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\refint\MiniHbys.Utilities.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\ref\MiniHbys.Utilities.dll
+D:\VTYS\VTYSProject\MiniHbys.Utilities\bin\Debug\net7.0\MiniHbys.Utilities.deps.json
+D:\VTYS\VTYSProject\MiniHbys.Utilities\bin\Debug\net7.0\MiniHbys.Utilities.dll
+D:\VTYS\VTYSProject\MiniHbys.Utilities\bin\Debug\net7.0\MiniHbys.Utilities.pdb
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.AssemblyInfoInputs.cache
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.AssemblyInfo.cs
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.csproj.CoreCompileInputs.cache
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.sourcelink.json
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.dll
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\refint\MiniHbys.Utilities.dll
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\MiniHbys.Utilities.pdb
+D:\VTYS\VTYSProject\MiniHbys.Utilities\obj\Debug\net7.0\ref\MiniHbys.Utilities.dll

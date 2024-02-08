@@ -1,0 +1,27 @@
+@model MiniHbys.Entity.Department
+
+@{
+    ViewBag.Title = "Edit Department";
+    Layout = "_Layout";
+}
+
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Department", routeValues: null, method: FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.DepartmentID)
+    <div class="content" style="padding: 20px">
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.DepartmentName, htmlAttributes: new { @class = "form-control" })
+        </div>
+        <div style="float: right">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger alert-dismissible" style="width: 50%">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                @ViewBag.Message
+            </div>
+        }
+    </div>
+}

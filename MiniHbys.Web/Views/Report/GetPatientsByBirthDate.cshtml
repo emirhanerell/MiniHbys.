@@ -1,0 +1,30 @@
+@model GetPatientsByBirthDateViewModel
+
+@{
+    ViewBag.Title = "Patients By Birth Date";
+    Layout = "_Layout";
+}
+
+
+@using (Html.BeginForm(actionName: "GetPatientsByBirthDateReport", controllerName: "Report", routeValues: null, method: FormMethod.Post))
+{
+    <div style="padding: 20px">
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.StartDate, htmlAttributes: new { @class = "form-control", placeholder = "Start Date" })
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(x => x.EndDate, htmlAttributes: new { @class = "form-control", placeholder = "End Date" })
+        </div>
+        <div style="float: right">
+            <button type="submit" class="btn btn-success">Get Report</button>
+        </div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-danger alert-dismissible" style="width: 50%">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                @ViewBag.Message
+            </div>
+        }
+    </div>
+}

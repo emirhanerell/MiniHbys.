@@ -1,0 +1,36 @@
+@model System.Collections.Generic.List<MiniHbys.Entity.Inspection>
+
+@{
+    ViewBag.Title = "Inspections By Patient";
+    Layout = "_Layout";
+}
+<table class="table">
+    <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Inspection Date</th>
+        <th>Inspection Result</th>
+    </tr>
+
+    @foreach (var inspection in Model)
+    {
+        <tr>
+            <td>
+                @string.Format("{0} {1}",inspection.Patient?.PatientName,inspection.Patient?.PatientSurname)  
+            </td>
+            <td>
+                @string.Format("{0} {1}",inspection.Doctor?.DoctorName,inspection.Doctor?.DoctorSurname) 
+            </td>
+            <td>
+                @inspection.InspectionDate
+            </td>
+            <td>
+                @inspection.InspectionResult
+            </td>
+        </tr>
+    }
+</table>
+<div style="padding: 10%">
+    @Html.ActionLink(linkText:"Export",actionName:"ExportReport",controllerName:"Report",routeValues:new {reportName = "InspectionsByPatientReport"},
+    htmlAttributes:new { @class="btn btn-success"})
+</div>

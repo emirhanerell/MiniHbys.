@@ -1,0 +1,64 @@
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.DataAccess.deps.json
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.DataAccess.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.DataAccess.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.csproj.AssemblyReference.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.AssemblyInfoInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.AssemblyInfo.cs
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.csproj.CoreCompileInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/refint/MiniHbys.DataAccess.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/obj/Debug/net7.0/ref/MiniHbys.DataAccess.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.DataAccess.deps.json
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.DataAccess.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.DataAccess.pdb
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.Entity.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.Utilities.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.Entity.pdb
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/bin/Debug/net7.0/MiniHbys.Utilities.pdb
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.csproj.AssemblyReference.cache
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.AssemblyInfoInputs.cache
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.AssemblyInfo.cs
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.csproj.CoreCompileInputs.cache
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.csproj.CopyComplete
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/refint/MiniHbys.DataAccess.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.pdb
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/ref/MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.deps.json
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Entity.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Utilities.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Entity.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Utilities.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.AssemblyReference.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.AssemblyInfoInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.AssemblyInfo.cs
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.CopyComplete
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\refint\MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\ref\MiniHbys.DataAccess.dll
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.deps.json
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.dll
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.pdb
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Entity.dll
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Utilities.dll
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Entity.pdb
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Utilities.pdb
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.AssemblyReference.cache
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.AssemblyInfoInputs.cache
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.AssemblyInfo.cs
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.CoreCompileInputs.cache
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.sourcelink.json
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.CopyComplete
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.dll
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\refint\MiniHbys.DataAccess.dll
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.pdb
+D:\VTYS\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\ref\MiniHbys.DataAccess.dll
